@@ -45,5 +45,5 @@ jobs:
 
       # store raw contents of src code
       - store_artifacts:
-          path: target/*.jar
+          path: target
           destination: shared-libs
