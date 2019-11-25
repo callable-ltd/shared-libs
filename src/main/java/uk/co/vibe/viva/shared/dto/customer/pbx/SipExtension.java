@@ -5,13 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import uk.co.vibe.viva.shared.dto.customer.DeviceDTO;
-import uk.co.vibe.viva.shared.dto.customer.TrunkDTO;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import java.lang.module.ResolutionException;
 import java.util.List;
 
 @Data
