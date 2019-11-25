@@ -3,7 +3,7 @@ package uk.co.vibe.viva.shared.dto.ivr;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import uk.co.vibe.viva.shared.dto.customer.CallbackURLDTO;
 
 import javax.validation.constraints.NotBlank;

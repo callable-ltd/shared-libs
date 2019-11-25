@@ -2,7 +2,7 @@ package uk.co.vibe.viva.shared.dto.customer;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.validation.constraints.Pattern;
 
