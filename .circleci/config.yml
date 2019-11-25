@@ -39,3 +39,11 @@ jobs:
 
       # run tests!
       - run: mvn integration-test
+
+      # build jar
+      - run: mvn clean package
+
+      # store raw contents of src code
+      - store_artifacts:
+          path: target/*.jar
+          destination: shared-libs
