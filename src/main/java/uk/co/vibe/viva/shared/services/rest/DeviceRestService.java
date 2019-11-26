@@ -9,7 +9,7 @@ import uk.co.vibe.viva.shared.dto.customer.DeviceResponse;
 
 public class DeviceRestService extends InternalRestService<DeviceResponse, DevicePostRequest, DevicePutRequest> {
 
-    private static final String BASE_URL = "http://customer-service/customers";
+    private static final String BASE_URL = "http://customer-service-svc/customers";
     private static final String PATH = "devices";
 
     public DeviceRestService(VivaRestService vivaRestService) {

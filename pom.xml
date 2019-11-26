@@ -43,24 +43,15 @@
         </pluginManagement>
     </build>
 
-<!--    <distributionManagement>-->
-<!--        <repository>-->
-<!--            <id>github</id>-->
-<!--            <name>GitHub vibe-communications-uk-ltd Apache Maven Packages</name>-->
-<!--            <url>https://maven.pkg.github.com/vibe-communications-uk-ltd/shared-libs</url>-->
-<!--        </repository>-->
-<!--    </distributionManagement>-->
-
     <distributionManagement>
         <repository>
-            <id>nexus-snapshots</id>
-            <url>http://nexus.jx.viva-api.net/repository/viva_local</url>
+            <id>github</id>
+            <name>GitHub vibe-communications-uk-ltd Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/vibe-communications-uk-ltd/shared-libs</url>
         </repository>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <url>http://nexus.jx.viva-api.net/repository/viva_local</url>
-        </snapshotRepository>
     </distributionManagement>
+
+
 
     <packaging>jar</packaging>
 

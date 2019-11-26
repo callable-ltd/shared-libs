@@ -7,7 +7,7 @@ import uk.co.vibe.viva.shared.dto.billing.ProductTableResponse;
 
 public class ProductTableRestService extends InternalRestService<ProductTableResponse, ProductTablePostRequest, ProductTablePutRequest> {
 
-    private static final String BASE_URL = "http://billing-service/billing/product-table";
+    private static final String BASE_URL = "http://billing-service-svc/billing/product-table";
 
     public ProductTableRestService(VivaRestService vivaRestService) {
         super(vivaRestService);

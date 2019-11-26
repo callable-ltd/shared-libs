@@ -9,7 +9,7 @@ import uk.co.vibe.viva.shared.dto.billing.RatingTableResponse;
 @Service
 public class RatingTableRateRestService extends InternalRestService<RatingTableResponse, RatingTableRatePostRequest, RatingTableRatePutRequest> {
 
-    private static final String BASE_URL = "http://billing-service/billing/rating-table";
+    private static final String BASE_URL = "http://billing-service-svc/billing/rating-table";
     private static final String PATH = "rates";
 
     public RatingTableRateRestService(VivaRestService vivaRestService) {

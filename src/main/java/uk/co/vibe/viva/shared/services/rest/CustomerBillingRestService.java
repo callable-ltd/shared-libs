@@ -6,7 +6,7 @@ import uk.co.vibe.viva.shared.dto.billing.CustomerBillingResponse;
 
 public class CustomerBillingRestService extends InternalRestService<CustomerBillingResponse, CustomerBillingPostRequest, CustomerBillingPutRequest> {
 
-    private static final String BASE_URL = "http://billing-service/billing/customer-billing";
+    private static final String BASE_URL = "http://billing-service-svc/billing/customer-billing";
 
     public CustomerBillingRestService(VivaRestService vivaRestService) {
         super(vivaRestService);

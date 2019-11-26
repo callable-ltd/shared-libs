@@ -7,7 +7,7 @@ import uk.co.vibe.viva.shared.dto.customer.CustomerAddressPutRequest;
 @Service
 public class CustomerAddressRestService {
 
-    private static final String BASE_URL = "http://customer-service/customers";
+    private static final String BASE_URL = "http://customer-service-svc/customers";
     private static final String ELEMENT = "address";
 
     @Autowired

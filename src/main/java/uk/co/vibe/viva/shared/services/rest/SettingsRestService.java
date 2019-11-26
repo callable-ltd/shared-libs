@@ -9,7 +9,7 @@ import java.net.URI;
 
 public class SettingsRestService extends InternalRestService<SettingsResponse, SettingsPostRequest, SettingsPutRequest> {
 
-    private static final String BASE_URL = "http://customer-service/customers";
+    private static final String BASE_URL = "http://customer-service-svc/customers";
     private static final String PATH = "settings";
 
     public SettingsRestService(VivaRestService vivaRestService) {

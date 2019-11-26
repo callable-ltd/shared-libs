@@ -13,7 +13,7 @@ import java.util.Map;
 @Service
 public class RecordingRestService {
 
-    private static final String BASE_URL = "http://recording-service";
+    private static final String BASE_URL = "http://recording-service-svc";
     private static final String ELEMENT = "recording";
 
     @Autowired

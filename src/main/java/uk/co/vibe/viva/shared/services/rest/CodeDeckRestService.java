@@ -8,7 +8,7 @@ import uk.co.vibe.viva.shared.dto.billing.CodeDeckResponse;
 
 public class CodeDeckRestService extends InternalRestService<CodeDeckResponse, CodeDeckPostRequest, CodeDeckPutRequest> {
 
-    private static final String BASE_URL = "http://billing-service/billing/code-deck";
+    private static final String BASE_URL = "http://billing-service-svc/billing/code-deck";
 
     public CodeDeckRestService(VivaRestService vivaRestService) {
         super(vivaRestService);

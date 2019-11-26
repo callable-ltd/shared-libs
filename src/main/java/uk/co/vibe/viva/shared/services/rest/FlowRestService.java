@@ -8,7 +8,7 @@ import uk.co.vibe.viva.shared.dto.flow.FlowResponse;
 
 public class FlowRestService extends InternalRestService<FlowResponse, FlowPostRequest, FlowPutRequest> {
 
-    private static final String BASE_URL = "http://ivr-service/ivr/flow";
+    private static final String BASE_URL = "http://ivr-service-svc/ivr/flow";
 
     public FlowRestService(VivaRestService vivaRestService) {
         super(vivaRestService);

@@ -11,7 +11,7 @@ import java.util.Map;
 @Service
 public class UserRestService {
 
-    private static final String BASE_URL = "http://customer-service/users";
+    private static final String BASE_URL = "http://customer-service-svc/users";
 
     @Autowired
     private VivaRestService vivaRestService;

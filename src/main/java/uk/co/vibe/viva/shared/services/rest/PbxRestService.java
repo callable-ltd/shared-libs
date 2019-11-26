@@ -7,7 +7,7 @@ import uk.co.vibe.viva.shared.dto.pbx.PbxEventsDTO;
 @Service
 public class PbxRestService {
 
-    private static final String BASE_URL = "http://pbx-service/pbx";
+    private static final String BASE_URL = "http://pbx-service-svc/pbx";
 
     @Autowired
     private VivaRestService vivaRestService;

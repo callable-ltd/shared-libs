@@ -8,7 +8,7 @@ import uk.co.vibe.viva.shared.dto.customer.DdiResponse;
 
 public class DDIRestService extends InternalRestService<DdiResponse, DDIPostRequest, DDIPutRequest> {
 
-    private static final String BASE_URL = "http://customer-service/customers";
+    private static final String BASE_URL = "http://customer-service-svc/customers";
     private static final String PATH = "ddis";
 
     public DDIRestService(VivaRestService vivaRestService) {

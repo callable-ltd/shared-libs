@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class StatRestService {
 
-    private static final String BASE_URL = "http://stat-service";
+    private static final String BASE_URL = "http://stat-service-svc";
 
     @Autowired
     private VivaRestService vivaRestService;

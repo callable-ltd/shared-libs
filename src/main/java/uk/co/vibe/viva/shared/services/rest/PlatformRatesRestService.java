@@ -7,7 +7,7 @@ import uk.co.vibe.viva.shared.dto.billing.PlatformRatesResponse;
 
 public class PlatformRatesRestService extends InternalRestService<PlatformRatesResponse, PlatformRatesPostRequest, PlatformRatesPutRequest> {
 
-    private static final String BASE_URL = "http://billing-service/billing/platform-rates";
+    private static final String BASE_URL = "http://billing-service-svc/billing/platform-rates";
 
     public PlatformRatesRestService(VivaRestService vivaRestService) {
         super(vivaRestService);

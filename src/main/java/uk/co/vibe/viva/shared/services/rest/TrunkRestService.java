@@ -8,7 +8,7 @@ import uk.co.vibe.viva.shared.dto.customer.TrunkResponse;
 
 public class TrunkRestService extends InternalRestService<TrunkResponse, TrunkPostRequest, TrunkPutRequest> {
 
-    private static final String BASE_URL = "http://customer-service/customers";
+    private static final String BASE_URL = "http://customer-service-svc/customers";
     private static final String PATH = "trunks";
 
     public TrunkRestService(VivaRestService vivaRestService) {
