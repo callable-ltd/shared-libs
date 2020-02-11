@@ -38,7 +38,7 @@ public class CustomerFilter {
     private Integer page;
 
     @Min(1)
-    @Max(100)
+    @Max(10000)
     @NotNull
     private Integer max;
 

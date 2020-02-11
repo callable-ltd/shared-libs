@@ -17,6 +17,7 @@ public class TrunkDTO {
     private String calledFormat;
     private String description;
     private String zone;
+    private String sid;
 
     public boolean isTrunk() {
         return obp == null || !obp;

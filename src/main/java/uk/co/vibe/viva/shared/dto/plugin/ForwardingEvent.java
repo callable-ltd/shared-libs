@@ -1,4 +1,4 @@
-package uk.co.vibe.viva.shared.dto.events;
+package uk.co.vibe.viva.shared.dto.plugin;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.AllArgsConstructor;
@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import uk.co.vibe.viva.shared.dto.customer.CallbackURLDTO;
 import uk.co.vibe.viva.shared.dto.customer.CustomerDTO;
+import uk.co.vibe.viva.shared.dto.events.DialEvent;
 
 @Data
 @ToString

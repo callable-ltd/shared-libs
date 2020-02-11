@@ -77,6 +77,13 @@ public class VivaRestService {
                 .getBody();
     }
 
+    public void put(String url) {
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url);
+        HttpEntity httpEntity = new HttpEntity<>(new HttpHeaders());
+        rt(url).put(builder.toUriString(), httpEntity);
+    }
+
+
     public void delete(String url, String id) {
         log.info("delete <url={}, id={}>", url, id);
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url + "/" + id);

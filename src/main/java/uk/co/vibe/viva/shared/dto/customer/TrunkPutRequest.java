@@ -47,4 +47,6 @@ public class TrunkPutRequest {
     @NotNull
     @NotBlank
     private String zone;
+
+    private String sid;
 }

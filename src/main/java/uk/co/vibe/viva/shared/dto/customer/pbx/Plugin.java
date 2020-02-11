@@ -28,6 +28,8 @@ public class Plugin extends CallCompleteHandler {
     @NotBlank
     private String onError;
 
+    private String data;
+
     public CallbackURLDTO getCallbackURL(List<CallbackURLDTO> callbacks) {
         return callbacks.stream()
                 .filter(deviceDTO -> deviceDTO.getId().equals(plugin))

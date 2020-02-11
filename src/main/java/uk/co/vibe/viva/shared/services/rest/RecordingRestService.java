@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import uk.co.vibe.viva.shared.dto.recording.PublicRecordingResponse;
 import uk.co.vibe.viva.shared.dto.recording.RecordingFilterRequest;
 import uk.co.vibe.viva.shared.dto.recording.RecordingPutTagRequest;
-import uk.co.vibe.viva.shared.dto.recording.RecordingResponse;
 
 import java.net.URL;
 import java.util.Map;
@@ -33,5 +32,9 @@ public class RecordingRestService {
 
     public URL url(String id) {
         return vivaRestService.get(BASE_URL + "/" + ELEMENT + "/" + id + "/url", null, URL.class);
+    }
+
+    public void restore(String id) {
+        vivaRestService.put(BASE_URL + "/" + ELEMENT + "/" + id + "/restore");
     }
 }

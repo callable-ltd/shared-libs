@@ -9,7 +9,6 @@ import uk.co.vibe.viva.shared.dto.events.VivaSimpleEvent;
 import uk.co.vibe.viva.shared.dto.pbx.SimplePBXEvent;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -38,14 +37,19 @@ public class RecordingUploadEvent {
 
     private Set<String> extensions;
 
-    public RecordingUploadEvent(CustomerDTO customer, VivaSimpleEvent event, EventsGroup group) {
+    private String originalFrom;
+    private String originalTo;
+
+    public RecordingUploadEvent(CustomerDTO customer, VivaSimpleEvent event, EventsGroup group, String cid) {
         this.status = "uploading";
         this.id = UUID.randomUUID().toString();
         this.customer = customer;
         this.cid = event.getDialCid();
         this.pid = event.getParentId();
-        this.from = event.getFrom();
-        this.to = event.getTo();
+        this.originalFrom = event.getFrom();
+        this.originalTo = event.getTo();
+        this.from = group.getTermFrom(cid);
+        this.to = group.getTermTo(cid);
         this.url = event.getDialRecordingUrl();
         this.ip = event.getIp();
         this.ringDuration = event.getDialRingDuration();

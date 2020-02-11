@@ -48,4 +48,6 @@ public class TrunkPostRequest {
     @NotNull
     @NotBlank
     private String zone;
+
+    private String sid;
 }

@@ -28,6 +28,9 @@ public class CustomerDTO {
     private String clientID;
     @NotNull
     @NotBlank
+    private String domain;
+    @NotNull
+    @NotBlank
     private String type;
     @NotNull
     private List<DdiDTO> ddis;

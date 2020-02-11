@@ -27,6 +27,10 @@ public class CustomerPostRequest {
 
     @NotNull
     @NotBlank
+    private String domain;
+
+    @NotNull
+    @NotBlank
     private String type;
 
     @NotNull

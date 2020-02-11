@@ -30,6 +30,10 @@ public class CustomerPutRequest {
 
     @NotNull
     @NotBlank
+    private String domain;
+
+    @NotNull
+    @NotBlank
     private String type;
 
 }
